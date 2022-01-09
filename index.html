@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="src/style.css"
+      media="screen"
+    />
+    <title>Conversor Numérico</title>
+  </head>
+  <body>
+    <h1>Conversor Numérico 	&#128516;</h1>
+    <div class="container">
+      <select id="select1" class="choice">
+        <option value="Orientação" selected
+          >O que você deseja converter?</option
+        >
+        <option value="Binário">Binário</option>
+        <option value="Decimal">Decimal</option>
+        <option value="Hexadecimal">Hexadecimal</option>
+      </select>
+
+      <select id="select2" class="choice">
+        <option value="Orientação" selected>Qual será a saída?</option>
+        <option value="Binário">Binário</option>
+        <option value="Decimal">Decimal</option>
+        <option value="Hexadecimal">Hexadecimal</option>
+      </select>
+
+      <input
+        id="bin"
+        class="bin2"
+        type="text"
+        name="binary"
+        placeholder="Digite um valor"
+        value=""
+      />
+
+      <button class="btn" type="submit" onclick="toConvert();">
+        Converter
+      </button>
+
+      <div id="result">
+        <!--<p class="pResult">Binário: 1111</p>-->
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript" src="src/app.js"></script>
+</html>
